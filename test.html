@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navbar Example</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Navbar container */
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ffffff;
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* Logo */
+    .navbar .logo img {
+        height: 40px;
+    }
+
+    /* Navbar links */
+    .nav-links {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: #007BFF;
+    }
+
+    /* Donate / Buy Now button */
+    .donate-btn {
+        background-color: #ff5722;
+        color: white;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .donate-btn:hover {
+        background-color: #e64a19;
+    }
+
+    /* Responsive for small screens */
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+        }
+    }
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+        <a href="index.html"><img src="logo.png" alt="Company Logo"></a>
+    </div>
+
+    <!-- Links -->
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- Donate Button -->
+    <a href="donate.html" class="donate-btn">Donate / Buy Now</a>
+</nav>
+
+<nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+        <a href="index.html"><img src="logo.png" alt="Company Logo"></a>
+    </div>
+
+    <!-- Links -->
+    <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- Donate Button -->
+    <a href="donate.html" class="donate-btn">Donate / Buy Now</a>
+
+    <!-- Hamburger Icon -->
+    <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+<script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+</script>
+
+
+</body>
+</html>

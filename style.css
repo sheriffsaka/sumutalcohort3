@@ -1,0 +1,92 @@
+body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Navbar container */
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ffffff;
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* Logo */
+    .navbar .logo img {
+        height: 40px;
+    }
+
+    /* Navbar links */
+    .nav-links {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: #007BFF;
+    }
+
+    /* Donate / Buy Now button */
+    .donate-btn {
+        background-color: #ff5722;
+        color: white;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .donate-btn:hover {
+        background-color: #e64a19;
+    }
+
+    table, td, tr, th {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 15px;
+    }
+    th{
+        text-align: left;
+    }
+
+    .phones{
+        background-color: black;
+        color: white;
+        margin: 40px;
+        padding: 50px;
+    }
+
+    .ph1 {
+        border-style: solid;
+        border-color: rgb(176, 238, 61);
+        border-width: 1px 3px 7px 10px; /* top right bottom left */
+        padding: 20px;
+    }
+
+    .services ol{
+        border-width: 1px solid blue;
+        display: block;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    /* Responsive for small screens */
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+        }
+    }

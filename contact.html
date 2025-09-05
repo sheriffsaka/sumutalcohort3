@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sumutal Tech Hub - About</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS -->
+  </head>
+ <body style="color:blue; background-color: aqua;">
+    <div>
+      
+    <!-- <div> -->
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html" alt="Company Logo"><img src="logo.png" height="200" width="200" alt="Company Logo"></a>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="programmes.html">Programmes</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <a href="donate.html" class="donate-btn">Donate / Buy Now</a>
+      </nav>
+    </div>
+    <div>
+        <p><h1  style="text-align: center">About Sumutal Tech Hub</h1></p>
+		<div>
+            <p><a href="index.html">Home</a> > Contact Us</p>
+            <pre>
+                <b>About Sumotal tech Hub</b> text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type 
+                specimen book. It has survived not only five centuries, but also the leap 
+                into electronic typesetting, remaining essentially unchanged. It was 
+                popularised in the 1960s with the release of Letraset sheets containing 
+                Lorem Ipsum passages, and more recently with desktop publishing software 
+                like Aldus PageMaker including versions of Lorem Ipsum.
+            </pre>
+        </div>
+       
+    </div>
+    <div>
+      Testing Database connection <a href="./database/connect.php">Connect Me</a>
+    </div>
+
+    <div style="justify-self: center;">
+     <fieldset>
+      <legend>Feedback Form:</legend>
+         <form action="./database/process.php" method="POST">
+        <h1>Sumutal Tech Hub Student Admission Form</h1>
+        <p>
+          <h4>Fill all the fields marked (*):</h4>
+        </p>
+        <label for="name">FullName:*</label><br>
+        <input type="text" id="name" name="fullname" placeholder="Enter your full name" required="true"><br>
+        <label for="email">E-mail:*</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required="true"><br>
+        <label for="telephone">Telephone:*</label><br>
+        <input type="text" id="telephone" name="telephone" placeholder="Enter your phone number" required="true"><br><br>
+        <label for="gender">Gender:*</label><br>
+        <input type="radio" id="male" name="gender" value="Male">Male<br>
+        <input type="radio" id="female" name="gender" value="Female">Female<br>
+        <input type="radio" id="others" name="gender" value="Others">Others<br><br>
+        <p>
+          Select your Class Level:<br>
+          <select>
+            <option value="Beginners">Beginners</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Expert">Expert</option>
+          </select>
+        </p>
+        <p>
+          Select your Gender:<br>
+          <select>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+          </select>
+        </p>
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" rows="5" cols="20" placeholder="Enter your message here">
+
+        </textarea><br><br>
+        <input type="submit" id="submit" value="Send Feedback" onclick="alert('Thank you for your feedback.');">
+      </form>
+     </fieldset>
+    </div>
+    <footer>
+      <div>
+        <p>
+          About Sactech
+        </p>
+      </div>
+      <div>
+        <p>
+          Our Services
+        </p>
+      </div>
+      <div>
+        <p>
+          Contact Us
+        </p>
+        <ul>
+          <li>Address: 1770 Rumfa Shehu Street</li>
+          <li>Telephone: 08033618259</li>
+          <li>E-mail: sactechcomputers@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+
+</html>

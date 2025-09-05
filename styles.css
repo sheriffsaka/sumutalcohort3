@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+/* Logo */
+.navbar .logo img {
+    height: 40px;
+}
+
+/* Navbar links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+/* Donate / Buy Now button */
+.donate-btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.donate-btn:hover {
+    background-color: #e64a19;
+}
+
+/* Hamburger icon */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Page content styling */
+.page-content {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.page-content h1 {
+    color: #333;
+}
+
+.page-content p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        padding: 10px;
+        z-index: 999;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
